@@ -13,7 +13,7 @@ class Postgis < Formula
   depends_on :libtool
 
   depends_on 'gpp' => :build
-  depends_on 'postgresql'
+  #depends_on 'postgresql'
   depends_on 'proj'
   depends_on 'geos'
 
@@ -140,5 +140,5 @@ index 136a1d6..c953c69 100644
 +AC_PATH_PROG([GPP], [gpp], [])
 +SQLPP="${GPP} -C -s \'" dnl Use better string support
  AC_SUBST([SQLPP])
- 
+
  dnl
