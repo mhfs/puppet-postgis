@@ -11,6 +11,6 @@ class postgis {
   }
 
   package { 'boxen/brews/postgis':
-    ensure => '1.0.4-boxen1'
+    ensure => '2.0.2-boxen1'
   }
 }
