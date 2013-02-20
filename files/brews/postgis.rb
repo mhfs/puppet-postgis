@@ -13,7 +13,6 @@ class Postgis < Formula
   depends_on :libtool
 
   depends_on 'gpp' => :build
-  #depends_on 'postgresql'
   depends_on 'proj'
   depends_on 'geos'
 
