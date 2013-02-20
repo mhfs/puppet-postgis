@@ -6,5 +6,11 @@
 class postgis {
   include homebrew
 
-  package { 'postgis': }
+  homebrew::formula { 'postgis':
+    before => Package['boxen/brews/postgis'],
+  }
+
+  package { 'boxen/brews/postgis':
+    ensure => '1.0.4-boxen1'
+  }
 }
